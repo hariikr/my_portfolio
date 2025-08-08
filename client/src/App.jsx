@@ -228,8 +228,7 @@ export default function App() {
                 <span className="text-xs bg-gray-100 dark:bg-gray-800 px-2.5 py-1 rounded">Angular · Node.js · MySQL</span>
               </div>
               <ul className="list-disc ml-5 mt-2 text-sm text-gray-700 dark:text-gray-300 space-y-1">
-                <li>Assisted in building core financial software used by enterprise clients.</li>
-                <li>Contributed to CI/CD automation, environment setup, and performance optimization tasks.</li>
+
                 <li>Actively learning full-stack and DevOps practices while supporting real-world production workflows.</li>
               </ul>
             </li>
