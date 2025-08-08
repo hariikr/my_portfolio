@@ -49,6 +49,22 @@ npm start
 ```
 - The server will run on PORT and serve the built client from `client/dist`.
 
+## Deploy to Render
+Web Service (single service: API serves client):
+- Build Command: `npm run render-build`
+- Start Command: `npm run render-start`
+- Environment Variables:
+  - NODE_ENV=production
+  - SMTP_SERVICE=gmail (or SMTP_HOST/SMTP_PORT/SMTP_SECURE)
+  - SMTP_USER, SMTP_PASS (Gmail App Password)
+  - MAIL_FROM=Harikrishnan <your@gmail.com>
+  - MAIL_TO=harikrishnananish0@gmail.com
+  - CLIENT_ORIGIN=<your site url>
+- Health Check Path: `/health`
+- Auto Deploy: On (main)
+
+If you prefer two services (Static + API), see the previous section on CORS and full API URLs.
+
 ## Project Structure
 - `server/` Express API (contact route, security middleware)
 - `client/` React (Vite, Tailwind)

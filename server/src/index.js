@@ -43,7 +43,8 @@ app.use('/api/contact', contactRoutes);
 if (process.env.NODE_ENV === 'production') {
   const clientBuild = path.join(__dirname, '../../client/dist');
   app.use(express.static(clientBuild));
-  app.get('*', (_req, res) => res.sendFile(path.join(clientBuild, 'index.html')));
+  // Express v5 no longer supports '*' path. Use a regex or '/*'.
+  app.get(/.*/, (_req, res) => res.sendFile(path.join(clientBuild, 'index.html')));
 }
 
 const PORT = process.env.PORT || 5000;
