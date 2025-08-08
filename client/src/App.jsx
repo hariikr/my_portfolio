@@ -50,7 +50,7 @@ export default function App() {
 
   const skills = {
     Frontend: ['HTML', 'CSS', 'JavaScript', 'React', 'Angular', 'Tailwind CSS'],
-    Backend: ['Node.js', 'Express.js', 'Django', 'Python', 'Java'],
+    Backend: ['Node.js', 'Express.js', 'Django',],
     Databases: ['MongoDB', 'MySQL', 'PostgreSQL'],
     DevOps: ['Docker', 'GitHub Actions', 'AWS EC2', 'Cron Jobs'],
     Tools: ['Git', 'VSCode', 'Postman', 'Figma'],
