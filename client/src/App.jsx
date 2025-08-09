@@ -52,8 +52,8 @@ export default function App() {
     Frontend: ['HTML', 'CSS', 'JavaScript', 'React', 'Angular', 'Tailwind CSS'],
     Backend: ['Node.js', 'Express.js', 'Django',],
     Databases: ['MongoDB', 'MySQL', 'PostgreSQL'],
-    DevOps: ['Docker', 'GitHub Actions', 'AWS EC2', 'Cron Jobs'],
-    Tools: ['Git', 'VSCode', 'Postman', 'Figma'],
+    DevOps: ['Docker', 'GitHub Actions', 'AWS EC2'],
+    Tools: ['Git', 'Postman', 'Figma'],
     APIs: ['OpenAI API', 'REST APIs']
   }
 
@@ -213,6 +213,24 @@ export default function App() {
               </div>
             </div>
           ))}
+        </div>
+      </Section>
+
+      {/* Education (intentionally not added to nav) */}
+      <Section id="education" title="Education" subtitle="Academic background">
+        <div className="not-prose space-y-6">
+          <div className="card p-5 space-y-2">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <h3 className="font-semibold">B.Tech in Computer Science & Engineering</h3>
+              <span className="text-xs bg-gray-100 dark:bg-gray-800 px-2.5 py-1 rounded">2021 – 2025</span>
+            </div>
+            <p className="text-sm text-gray-600 dark:text-gray-300">Cochin University of Science and Technology (CUSAT)</p>
+            <ul className="list-disc ml-5 text-sm text-gray-700 dark:text-gray-300 space-y-1">
+              <li>Focused on full‑stack development, software engineering, and AI fundamentals.</li>
+              <li>Built multiple practical projects applying web, backend, and automation concepts.</li>
+              <li>Coursework: Data Structures & Algorithms, DBMS, OS, Computer Networks, OOP, AI/ML basics.</li>
+            </ul>
+          </div>
         </div>
       </Section>
 
